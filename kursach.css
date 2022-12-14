@@ -1664,7 +1664,13 @@ li{
 }
 .anim_opac.anim_opac_show{
     opacity:1;
-    transition:opacity 1s;
+    margin-left:0px;
+    transition:opacity 3s;
+
+}
+
+.display_none{
+    display:none
 }
 
 

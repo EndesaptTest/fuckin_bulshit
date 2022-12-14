@@ -7,7 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='kursach.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    
     <meta name="viewport" content="width=device-width, user-scalable=no"/>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,400;0,500;1,500&display=swap');
@@ -39,6 +39,7 @@
             <div onclick="window.location='Contacts.html'" class="header-button">КОНТАКТЫ</div>
             <button>СВЯЗАТЬСЯ</button>
         </div>
+        <div>
     </div>
     </header>
         <div class="block_12">
@@ -59,23 +60,60 @@
                     <div class="servtext">
                         <p class="middle_font1">Прыжки с парашютом</p>                        
                     <p class="small_font">Незабываемые эмоции и виды в свободном полёте</p>
-                    <button class="arrow" onclick="window.location='skydiving.html'">Посмотреть</button>
+                    <button class="arrow" onclick="show(0)">Посмотреть</button>
+                    </div>
+                </div>
+                <div class="serv display_none ">
+                    <div class="servtext">
+                        Прыжки в тандеме с инструктором: 395 рублей<br>
+                        Программа Статик-Лайн: 190 рублей
+                    </div>
+                    <div class="servtext">
+                        Самостоятельный прыжок: 170 рублей<br>
+                        Обучение прыжкам с парашютом: 3390 рублей.<br>                       
+                        Для спортсменов: 1000 метров – 50 руб, 2000 метров – 60 руб. Аренда парашюта - 15 руб.<br>
                     </div>
                 </div>
                 <div class="serv">
                     <div class="servtext">
                         <p class="middle_font1">Полёты</p>
                     <p class="small_font">Выполните фигуры высшего пилотажа с нашими лётчиками</p>
-                    <button class="arrow">Посмотреть</button>
+                    <button class="arrow" onclick="show(1)">Посмотреть</button>
                     </div>
                     <img src="images/serv2 (2).png">
+                </div>
+                <div class="serv display_none ">
+                    <div class="servtext">
+                        Обзорный полёт на самолёте Ан-2: 15 минут – 370 руб.<br>
+                        30 минут – 740 руб.<br>
+                        1 час полета – 1470 руб.<br>
+                        (10 пассажиров)
+                    </div>
+                    <div class="servtext">
+                        Полёт на Самолёте Як-2 с выполнением фигур высшего пилотажа:<br>
+                        15 минут – 290 руб.<br>
+                        20 минут – 390 руб.<br>
+                        1 час полета – 1160 руб.<br>
+                        Обзорные полёты на вертолёте Ми-2: продолжительность полета 6 мин. 270 руб (за 6 пассажиров)
+                    </div>
                 </div>
                 <div class="serv">
                     <img src="images/serv3.png">
                     <div class="servtext">
                         <p class="middle_font1">Спорт</p>
                     <p class="small_font">Для тех, кто жить не может без высоты</p>
-                    <button class="arrow">Посмотреть</button>
+                    <button class="arrow" onclick="show(2)">Посмотреть</button>
+                    </div>
+                </div>
+                <div class="serv display_none ">
+                    <div class="servtext">
+                        Парашютный спорт<br>
+                        Вертолётный спорт
+                    </div>
+                    <div class="servtext">
+                        Самолётный спорт<br>
+                        Авиамодельный спорт    
+
                     </div>
                 </div>
                 <div class="serv">
@@ -114,6 +152,7 @@
                         </div>
                 </div>
             </footer>
+            <script src="services.js"></script>
 </body>
 
 </html>

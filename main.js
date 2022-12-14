@@ -26,7 +26,6 @@ let options={
 };
 let observer =new IntersectionObserver(onEntry,options);
 let elements=document.querySelectorAll('.anim_opac');
-console.log(elements);
 for(let el of elements){
     observer.observe(el);
 }
