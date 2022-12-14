@@ -189,7 +189,7 @@ footer{
     color: white;
     height: 600px;
     display: grid;
-    grid-template-rows: 2fr 0.3fr 0.3fr 0.8fr;
+    grid-template-rows: 2fr 0.1fr 0.1fr 0.7fr;
     align-content: center;  
     justify-items: center;
     grid-column-gap: 38px;
@@ -437,7 +437,7 @@ footer{
     }
   
     to {
-      background-image:url("images/btn.jpeg");
+      background-image:url("images/btnar2.jpeg");
     }
 }
 @keyframes btn_anim3 {
@@ -1788,11 +1788,11 @@ li{
 .fall_man.fall_man_2{
     opacity:1;
     top:0;
-    transition: top 2s ,opacity 0.5s;
+    transition: top 1s ,opacity 0.1s;
 }
 .fall_man{
     position: relative;
-    top:-150px;
+    top:-130px;
     opacity:0;
 }
 
