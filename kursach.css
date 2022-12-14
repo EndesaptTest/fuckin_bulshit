@@ -268,9 +268,10 @@ footer{
 }
 .arplane_mode{
     display: grid;
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 1fr 0.8fr;
     height: 122px;
     align-items: center;
+    justify-items: center;
 }
 .button_block3{
     display: flex;
