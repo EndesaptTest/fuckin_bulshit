@@ -1654,6 +1654,13 @@ li{
         font-size:1em;
     }
 }
+.anim_opac{
+    opacity:0;
+}
+.anim_opac.anim_opac_show{
+    opacity:1;
+    transition:opacity 1s;
+}
 
 
 
