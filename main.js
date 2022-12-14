@@ -29,3 +29,14 @@ let elements=document.querySelectorAll('.anim_opac');
 for(let el of elements){
     observer.observe(el);
 }
+
+//паршют-камикадзе
+let observer2 =new IntersectionObserver((entry)=>{
+    entry.forEach(change => {
+        if(change.isIntersecting){
+            change.target.classList.add("fall_man_2");
+        }
+
+    });
+},options);
+observer2.observe(document.getElementById("fall_man"));

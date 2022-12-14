@@ -122,7 +122,7 @@ header{
 }
 
 button{
-  background-image: linear-gradient(60deg,#469EF0 10%, #6879F0 50%, #9B46F0 100%);
+  background: linear-gradient(90deg,#469EF0 10%,  #9B46F0 51%,#469EF0 100%);
   color: white;
   border-radius: 10px;
   border: white;
@@ -132,6 +132,11 @@ button{
   width: 180px;
   font-family: 'Dancing Script', cursive;
   font-family: 'Jost', sans-serif;
+  transition:0.5s;
+  background-size: 200% auto;
+}
+button:hover{
+    background-position: right center;
 }
 
 .main_btn{
@@ -748,6 +753,20 @@ li{
     color:#469EF0 ;
 }
 
+
+/*2 новости*/
+.itc-slider__wrapper{
+    display: flex;
+    width:100%;
+}
+.itc-slider__items {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.nav-wrapper2{
+    display:none;
+}
+
 @media only screen and (min-width: 1645px) and (max-width: 1700px){ 
     .big_font{
         font-size: 42pt;
@@ -983,7 +1002,14 @@ li{
     .icon2{
         grid-column-gap: 100px;
     }
+    .nav-wrapper2{
+        display: block;
     }
+    .nav-wrapper{
+        display: none;
+    }
+}
+
 
 @media only screen and (min-width: 1050px) and (max-width: 1175px){ 
     .big_font{
@@ -1636,12 +1662,6 @@ li{
 }
 
 
-/*2 новости*/
-.itc-slider__items {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
 
 /*цвет загрузочного экрана*/
 .animationLoader {
@@ -1712,5 +1732,68 @@ li{
     display:none
 }
 
+.menu-btn{
+    width:50px;
+    height:50px;
+    position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+.menu-btn span {
+	width: 50px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menu li {
+	list-style-type: none;
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+.fall_man.fall_man_2{
+    opacity:1;
+    top:0;
+    transition: top 2s ,opacity 0.5s;
+}
+.fall_man{
+    position: relative;
+    top:-150px;
+    opacity:0;
+}
 
 
