@@ -56,7 +56,28 @@
         <div onclick="window.location='Contacts.html'" class="header-button">КОНТАКТЫ</div>
         <button>СВЯЗАТЬСЯ</button>
     </div>
+    <!-- добавить эту штуку туда куда надо -->
+    <div class="nav-wrapper2">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
+            <nav>
+               <ul>
+                <li onclick="window.location='main.html'" class="header-button">ГЛАВНАЯ</li>
+                <li onclick="window.location='aeroclub.html'" class="header-button ">АЭРОКЛУБ</li>
+                <li onclick="window.location='Services and prices.html'" class="header-button ">УСЛУГИ</li>
+                <li onclick="window.location='Error 404.html'" class="header-button ">КАК ДОБРАТЬСЯ</li>
+                <li onclick="window.location='Contacts.html'" class="header-button">КОНТАКТЫ</li>
+                <button>СВЯЗАТЬСЯ</button>
+               </ul>
+            </nav>
+        </div>
+    </div>
 </div>
+<script src="nav.js"></script>
 </header>
 <body>
     <!-- html для згрузочного экрана -->
@@ -86,7 +107,7 @@
                     Нет ничего более захватывающего чем это ощущение
                     В этот момент все проблемы уходят на задний план. ты летишь, ты свободен. 
                     Если ты когда-либо хотел испытать это, то тебе обязательно надо прийти к нам.</p>
-                    <img class="" src="images/skydiver_tr.png">
+                    <img id="fall_man" class="fall_man" src="images/skydiver_tr.png">
             </div>  
         </div>
         <div class="block_3">
@@ -178,6 +199,7 @@
             </div>
         </footer>
     <script src="main.js"></script>
+    
         
 </body>
 
