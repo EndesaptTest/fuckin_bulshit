@@ -266,7 +266,12 @@ footer{
     flex-wrap: wrap;
     align-items: flex-start;
 }
-
+.arplane_mode{
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    height: 122px;
+    align-items: center;
+}
 .button_block3{
     display: flex;
     margin-right: 10%;
@@ -1646,7 +1651,7 @@ li{
 }
 @keyframes word_anim{
     from{
-        font-size:1.5em;
+        font-size:1.3em;
         opacity: 0.8;
     }
     to{
